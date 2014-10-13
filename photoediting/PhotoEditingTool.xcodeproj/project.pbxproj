@@ -12,16 +12,16 @@
 		A94EAED219EB71A300952156 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94EAED119EB71A300952156 /* UIKit.framework */; };
 		A94EAED819EB71A300952156 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A94EAED619EB71A300952156 /* InfoPlist.strings */; };
 		A94EAEDA19EB71A300952156 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A94EAED919EB71A300952156 /* main.m */; };
+		A94EAEDE19EB71A300952156 /* MPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A94EAEDD19EB71A300952156 /* MPAppDelegate.m */; };
+		A94EAEE119EB71A300952156 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94EAEDF19EB71A300952156 /* Main_iPhone.storyboard */; };
+		A94EAEE419EB71A300952156 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94EAEE219EB71A300952156 /* Main_iPad.storyboard */; };
+		A94EAEE719EB71A300952156 /* MPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A94EAEE619EB71A300952156 /* MPViewController.m */; };
 		A94EAEE919EB71A300952156 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A94EAEE819EB71A300952156 /* Images.xcassets */; };
 		A94EAEF019EB71A300952156 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94EAEEF19EB71A300952156 /* XCTest.framework */; };
 		A94EAEF119EB71A300952156 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94EAECD19EB71A300952156 /* Foundation.framework */; };
 		A94EAEF219EB71A300952156 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94EAED119EB71A300952156 /* UIKit.framework */; };
 		A94EAEFA19EB71A300952156 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A94EAEF819EB71A300952156 /* InfoPlist.strings */; };
 		A94EAEFC19EB71A300952156 /* PhotoEditingToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A94EAEFB19EB71A300952156 /* PhotoEditingToolTests.m */; };
-		A94EAF1319EB812B00952156 /* MPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A94EAF0819EB812B00952156 /* MPAppDelegate.m */; };
-		A94EAF1419EB812B00952156 /* MPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A94EAF0C19EB812B00952156 /* MPViewController.m */; };
-		A94EAF1519EB812B00952156 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94EAF1119EB812B00952156 /* Main_iPad.storyboard */; };
-		A94EAF1619EB812B00952156 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94EAF1219EB812B00952156 /* Main_iPhone.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,18 +43,18 @@
 		A94EAED719EB71A300952156 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A94EAED919EB71A300952156 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A94EAEDB19EB71A300952156 /* PhotoEditingTool-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhotoEditingTool-Prefix.pch"; sourceTree = "<group>"; };
+		A94EAEDC19EB71A300952156 /* MPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPAppDelegate.h; sourceTree = "<group>"; };
+		A94EAEDD19EB71A300952156 /* MPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPAppDelegate.m; sourceTree = "<group>"; };
+		A94EAEE019EB71A300952156 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		A94EAEE319EB71A300952156 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		A94EAEE519EB71A300952156 /* MPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPViewController.h; sourceTree = "<group>"; };
+		A94EAEE619EB71A300952156 /* MPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPViewController.m; sourceTree = "<group>"; };
 		A94EAEE819EB71A300952156 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A94EAEEE19EB71A300952156 /* PhotoEditingToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoEditingToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A94EAEEF19EB71A300952156 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A94EAEF719EB71A300952156 /* PhotoEditingToolTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhotoEditingToolTests-Info.plist"; sourceTree = "<group>"; };
 		A94EAEF919EB71A300952156 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A94EAEFB19EB71A300952156 /* PhotoEditingToolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoEditingToolTests.m; sourceTree = "<group>"; };
-		A94EAF0719EB812B00952156 /* MPAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPAppDelegate.h; sourceTree = "<group>"; };
-		A94EAF0819EB812B00952156 /* MPAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPAppDelegate.m; sourceTree = "<group>"; };
-		A94EAF0B19EB812B00952156 /* MPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPViewController.h; sourceTree = "<group>"; };
-		A94EAF0C19EB812B00952156 /* MPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPViewController.m; sourceTree = "<group>"; };
-		A94EAF1119EB812B00952156 /* Main_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPad.storyboard; sourceTree = "<group>"; };
-		A94EAF1219EB812B00952156 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,10 +84,10 @@
 		A94EAEC119EB71A300952156 = {
 			isa = PBXGroup;
 			children = (
-				A94EAED319EB71A300952156 /* PhotoEditingTool */,
 				A94EAEF519EB71A300952156 /* PhotoEditingToolTests */,
 				A94EAECC19EB71A300952156 /* Frameworks */,
 				A94EAECB19EB71A300952156 /* Products */,
+				A94EAED319EB71A300952156 /* PhotoEditingTool */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,10 +114,12 @@
 		A94EAED319EB71A300952156 /* PhotoEditingTool */ = {
 			isa = PBXGroup;
 			children = (
-				A94EAF0519EB812B00952156 /* Classes */,
-				A94EAF0E19EB812B00952156 /* OtherClasses */,
-				A94EAF0F19EB812B00952156 /* Resources */,
-				A94EAF1019EB812B00952156 /* StoryBorad */,
+				A94EAEDC19EB71A300952156 /* MPAppDelegate.h */,
+				A94EAEDD19EB71A300952156 /* MPAppDelegate.m */,
+				A94EAEDF19EB71A300952156 /* Main_iPhone.storyboard */,
+				A94EAEE219EB71A300952156 /* Main_iPad.storyboard */,
+				A94EAEE519EB71A300952156 /* MPViewController.h */,
+				A94EAEE619EB71A300952156 /* MPViewController.m */,
 				A94EAEE819EB71A300952156 /* Images.xcassets */,
 				A94EAED419EB71A300952156 /* Supporting Files */,
 			);
@@ -151,72 +153,6 @@
 				A94EAEF819EB71A300952156 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		A94EAF0519EB812B00952156 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				A94EAF0619EB812B00952156 /* Appdelegate */,
-				A94EAF0919EB812B00952156 /* ViewController */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		A94EAF0619EB812B00952156 /* Appdelegate */ = {
-			isa = PBXGroup;
-			children = (
-				A94EAF0719EB812B00952156 /* MPAppDelegate.h */,
-				A94EAF0819EB812B00952156 /* MPAppDelegate.m */,
-			);
-			path = Appdelegate;
-			sourceTree = "<group>";
-		};
-		A94EAF0919EB812B00952156 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				A94EAF0A19EB812B00952156 /* LoginRegVc */,
-				A94EAF0B19EB812B00952156 /* MPViewController.h */,
-				A94EAF0C19EB812B00952156 /* MPViewController.m */,
-				A94EAF0D19EB812B00952156 /* SplashVc */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		A94EAF0A19EB812B00952156 /* LoginRegVc */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = LoginRegVc;
-			sourceTree = "<group>";
-		};
-		A94EAF0D19EB812B00952156 /* SplashVc */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SplashVc;
-			sourceTree = "<group>";
-		};
-		A94EAF0E19EB812B00952156 /* OtherClasses */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = OtherClasses;
-			sourceTree = "<group>";
-		};
-		A94EAF0F19EB812B00952156 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		A94EAF1019EB812B00952156 /* StoryBorad */ = {
-			isa = PBXGroup;
-			children = (
-				A94EAF1119EB812B00952156 /* Main_iPad.storyboard */,
-				A94EAF1219EB812B00952156 /* Main_iPhone.storyboard */,
-			);
-			path = StoryBorad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,9 +232,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A94EAF1619EB812B00952156 /* Main_iPhone.storyboard in Resources */,
-				A94EAF1519EB812B00952156 /* Main_iPad.storyboard in Resources */,
+				A94EAEE419EB71A300952156 /* Main_iPad.storyboard in Resources */,
 				A94EAEE919EB71A300952156 /* Images.xcassets in Resources */,
+				A94EAEE119EB71A300952156 /* Main_iPhone.storyboard in Resources */,
 				A94EAED819EB71A300952156 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,8 +255,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A94EAEDA19EB71A300952156 /* main.m in Sources */,
-				A94EAF1419EB812B00952156 /* MPViewController.m in Sources */,
-				A94EAF1319EB812B00952156 /* MPAppDelegate.m in Sources */,
+				A94EAEE719EB71A300952156 /* MPViewController.m in Sources */,
+				A94EAEDE19EB71A300952156 /* MPAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +285,22 @@
 				A94EAED719EB71A300952156 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A94EAEDF19EB71A300952156 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A94EAEE019EB71A300952156 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		A94EAEE219EB71A300952156 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A94EAEE319EB71A300952156 /* Base */,
+			);
+			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		A94EAEF819EB71A300952156 /* InfoPlist.strings */ = {

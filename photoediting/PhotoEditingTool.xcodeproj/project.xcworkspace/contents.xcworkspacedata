@@ -3,9 +3,6 @@
    version = "1.0">
    <Group
       location = "container:"
-      name = "ROOT">
-      <FileRef
-         location = "self:PhotoEditingTool.xcodeproj">
-      </FileRef>
+      name = "New Group">
    </Group>
 </Workspace>
