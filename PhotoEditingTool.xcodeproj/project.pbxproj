@@ -84,10 +84,10 @@
 		A94EAEC119EB71A300952156 = {
 			isa = PBXGroup;
 			children = (
-				A94EAED319EB71A300952156 /* PhotoEditingTool */,
 				A94EAEF519EB71A300952156 /* PhotoEditingToolTests */,
 				A94EAECC19EB71A300952156 /* Frameworks */,
 				A94EAECB19EB71A300952156 /* Products */,
+				A94EAED319EB71A300952156 /* PhotoEditingTool */,
 			);
 			sourceTree = "<group>";
 		};
@@ -471,6 +471,7 @@
 				A94EAF0119EB71A300952156 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A94EAF0219EB71A300952156 /* Build configuration list for PBXNativeTarget "PhotoEditingToolTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +480,7 @@
 				A94EAF0419EB71A300952156 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
