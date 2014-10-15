@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--SplashVC - Splash Screen-->
+        <!--SplashVC - Splash Screen1-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="SplashVC" sceneMemberID="viewController">
@@ -23,7 +23,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Splash Screen" id="db1-yc-zxi"/>
+                    <navigationItem key="navigationItem" title="Splash Screen1" id="db1-yc-zxi"/>
                     <connections>
                         <segue destination="Zfj-1k-nqz" kind="push" identifier="goToLogin" id="TXN-vN-oVl"/>
                     </connections>
