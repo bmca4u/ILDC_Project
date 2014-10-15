@@ -27,7 +27,7 @@
 {
     [super viewDidLoad];
     self.navigationController.navigationBarHidden = YES;
-    [self performSelector:@selector(goToLoginScreen) withObject:nil afterDelay:5.0];
+    [self performSelector:@selector(goToLoginScreen) withObject:nil afterDelay:2.0];
     // Do any additional setup after loading the view.
 }
 -(void)goToLoginScreen
