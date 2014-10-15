@@ -13,9 +13,29 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [self awakeFromNib];
     return YES;
 }
-							
+
+-(void)awakeFromNib {
+    BOOL Success;
+	NSError *error;
+	NSArray *paths=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	NSString *docDir=[paths objectAtIndex:0];
+	NSString *writableDBPath=[docDir stringByAppendingPathComponent:@"myPhotoEditingToolSqllite"];
+	Success = [[NSFileManager defaultManager] fileExistsAtPath:writableDBPath];
+	
+	if(Success)
+		return;
+	NSString *defaultDBPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"myPhotoEditingToolSqllite"];
+	Success=[[NSFileManager defaultManager] copyItemAtPath:defaultDBPath toPath:writableDBPath error:&error];
+    
+	if(!Success) {
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error " message:@"Filed To Create Writable DataBase" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil];
+		[alert show];
+	}
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -7,13 +7,14 @@
 //
 
 #import "MPViewController.h"
-
+#import "database.h"
 @interface MPViewController ()
 
 @end
 
 @implementation MPViewController
-
+@synthesize txtPassword;
+@synthesize txtUsername;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -27,4 +28,35 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+
+
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    
+    [ textField resignFirstResponder];
+    
+    return YES;
+    
+}
+- (IBAction)btnSubmit:(UIButton *)sender {
+    
+    NSLog(@"%@",txtUsername.text);
+    
+    
+    
+    NSString *aStrQuery = [NSString stringWithFormat: @"SELECT * FROM Users WHERE username='%@' AND password ='%@'",txtUsername.text,txtPassword.text];
+    
+   NSMutableArray *userArray= [[database shareDatabase]getAllDataForQuery:aStrQuery];
+    
+    if([userArray count]){
+    
+        NSLog(@"yes%d",[userArray count]);
+    }else{
+        
+     NSLog(@"NO	%d",[userArray count]);
+    
+    }
+    
+}
 @end
