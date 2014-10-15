@@ -26,11 +26,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationController.navigationBarHidden = YES;
+    [self performSelector:@selector(goToLoginScreen) withObject:nil afterDelay:5.0];
     // Do any additional setup after loading the view.
 }
-
+-(void)goToLoginScreen
+{
+    [self performSegueWithIdentifier:@"goToLogin" sender:self];
+}
 - (void)didReceiveMemoryWarning
 {
+    
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

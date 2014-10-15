@@ -25,7 +25,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Splash Screen" id="db1-yc-zxi"/>
                     <connections>
-                        <segue destination="Zfj-1k-nqz" kind="push" id="TXN-vN-oVl"/>
+                        <segue destination="Zfj-1k-nqz" kind="push" identifier="goToLogin" id="TXN-vN-oVl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -202,7 +202,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Fi9-bT-m7c"/>
         <segue reference="vmk-Ub-HLw"/>
+        <segue reference="u6S-jU-Bec"/>
     </inferredMetricsTieBreakers>
 </document>
