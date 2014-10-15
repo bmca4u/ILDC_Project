@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9394E9319EB81FB00072037 /* SplashVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A9394E9219EB81FB00072037 /* SplashVC.m */; };
 		A94EAECE19EB71A300952156 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94EAECD19EB71A300952156 /* Foundation.framework */; };
 		A94EAED019EB71A300952156 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94EAECF19EB71A300952156 /* CoreGraphics.framework */; };
 		A94EAED219EB71A300952156 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94EAED119EB71A300952156 /* UIKit.framework */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A9394E9119EB81FB00072037 /* SplashVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashVC.h; sourceTree = SOURCE_ROOT; };
+		A9394E9219EB81FB00072037 /* SplashVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashVC.m; sourceTree = SOURCE_ROOT; };
 		A94EAECA19EB71A300952156 /* PhotoEditingTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoEditingTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A94EAECD19EB71A300952156 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A94EAECF19EB71A300952156 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -203,6 +206,8 @@
 		A94EAF0D19EB812B00952156 /* SplashVc */ = {
 			isa = PBXGroup;
 			children = (
+				A9394E9119EB81FB00072037 /* SplashVC.h */,
+				A9394E9219EB81FB00072037 /* SplashVC.m */,
 			);
 			path = SplashVc;
 			sourceTree = "<group>";
@@ -340,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A94EAEDA19EB71A300952156 /* main.m in Sources */,
+				A9394E9319EB81FB00072037 /* SplashVC.m in Sources */,
 				A94EAF1419EB812B00952156 /* MPViewController.m in Sources */,
 				A9EEE27419ECC25F0036F1D5 /* database.m in Sources */,
 				A94EAF1319EB812B00952156 /* MPAppDelegate.m in Sources */,
