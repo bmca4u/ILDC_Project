@@ -23,8 +23,8 @@
 		A94EAF1419EB812B00952156 /* MPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A94EAF0C19EB812B00952156 /* MPViewController.m */; };
 		A94EAF1519EB812B00952156 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94EAF1119EB812B00952156 /* Main_iPad.storyboard */; };
 		A94EAF1619EB812B00952156 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94EAF1219EB812B00952156 /* Main_iPhone.storyboard */; };
+		A950483A19EE17DD0089F535 /* database.m in Sources */ = {isa = PBXBuildFile; fileRef = A950483919EE17DD0089F535 /* database.m */; };
 		A9EEE27119ECC24A0036F1D5 /* myPhotoEditingToolSqllite in Resources */ = {isa = PBXBuildFile; fileRef = A9EEE27019ECC24A0036F1D5 /* myPhotoEditingToolSqllite */; };
-		A9EEE27419ECC25F0036F1D5 /* database.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EEE27319ECC25F0036F1D5 /* database.m */; };
 		A9EEE27719ECC5D50036F1D5 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A9EEE27619ECC5D50036F1D5 /* libsqlite3.0.dylib */; };
 /* End PBXBuildFile section */
 
@@ -61,9 +61,9 @@
 		A94EAF0C19EB812B00952156 /* MPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPViewController.m; sourceTree = "<group>"; };
 		A94EAF1119EB812B00952156 /* Main_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPad.storyboard; sourceTree = "<group>"; };
 		A94EAF1219EB812B00952156 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
+		A950483819EE17DD0089F535 /* database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = database.h; sourceTree = "<group>"; };
+		A950483919EE17DD0089F535 /* database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = database.m; sourceTree = "<group>"; };
 		A9EEE27019ECC24A0036F1D5 /* myPhotoEditingToolSqllite */ = {isa = PBXFileReference; lastKnownFileType = file; name = myPhotoEditingToolSqllite; path = PhotoEditingTool/myPhotoEditingToolSqllite; sourceTree = "<group>"; };
-		A9EEE27219ECC25F0036F1D5 /* database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = database.h; path = ../../../database.h; sourceTree = "<group>"; };
-		A9EEE27319ECC25F0036F1D5 /* database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = database.m; path = ../../../database.m; sourceTree = "<group>"; };
 		A9EEE27619ECC5D50036F1D5 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -169,7 +169,6 @@
 		A94EAF0519EB812B00952156 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				A9EEE27519ECC2D70036F1D5 /* Database */,
 				A94EAF0619EB812B00952156 /* Appdelegate */,
 				A94EAF0919EB812B00952156 /* ViewController */,
 			);
@@ -215,6 +214,7 @@
 		A94EAF0E19EB812B00952156 /* OtherClasses */ = {
 			isa = PBXGroup;
 			children = (
+				A950483719EE17BB0089F535 /* Database */,
 			);
 			path = OtherClasses;
 			sourceTree = "<group>";
@@ -235,11 +235,11 @@
 			path = StoryBorad;
 			sourceTree = "<group>";
 		};
-		A9EEE27519ECC2D70036F1D5 /* Database */ = {
+		A950483719EE17BB0089F535 /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				A9EEE27219ECC25F0036F1D5 /* database.h */,
-				A9EEE27319ECC25F0036F1D5 /* database.m */,
+				A950483819EE17DD0089F535 /* database.h */,
+				A950483919EE17DD0089F535 /* database.m */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -347,7 +347,7 @@
 				A94EAEDA19EB71A300952156 /* main.m in Sources */,
 				A9394E9319EB81FB00072037 /* SplashVC.m in Sources */,
 				A94EAF1419EB812B00952156 /* MPViewController.m in Sources */,
-				A9EEE27419ECC25F0036F1D5 /* database.m in Sources */,
+				A950483A19EE17DD0089F535 /* database.m in Sources */,
 				A94EAF1319EB812B00952156 /* MPAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
