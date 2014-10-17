@@ -18,12 +18,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationController.navigationBarHidden=NO;
+    self.navigationItem.hidesBackButton=YES;
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+    
     //
     // Dispose of any resources that can be recreated.
 }

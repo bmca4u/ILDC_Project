@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AlbumListingVC : UIViewController
+@interface AlbumListingVC : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
+@property (nonatomic,strong) NSMutableArray *AlbumList;
 @end
