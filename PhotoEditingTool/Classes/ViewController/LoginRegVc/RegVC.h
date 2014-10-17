@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "database.h"
 
 @interface RegVC : UIViewController
+
+  @property (weak, nonatomic) IBOutlet UITextField *txtEmail;
+  @property (weak, nonatomic) IBOutlet UITextField *txtNickname;
+  @property (weak, nonatomic) IBOutlet UITextField *txtPassword;
+
+
+- (IBAction)btnResisterme:(UIButton *)sender;
+
 
 @end

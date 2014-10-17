@@ -1,5 +1,7 @@
 //
 //  RegVC.m
+
+
 //  PhotoEditingTool
 //
 //  Created by indianic on 16/10/14.
@@ -46,4 +48,27 @@
 }
 */
 
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+
+{
+    
+    [textField resignFirstResponder];
+    
+    return YES;
+    
+}
+
+
+
+- (IBAction)btnResisterme:(UIButton *)sender {
+    
+    NSString *aStrQueryInsert = [NSString stringWithFormat:@"INSERT INTO Registration_Form (Nickname,Email,password) VALUES ('%@','%@','%@')",_txtNickname,_txtEmail,_txtPassword];
+    
+    
+    
+    [[database shareDatabase]dataBaseQuery:aStrQueryInsert];
+    
+
+}
 @end
