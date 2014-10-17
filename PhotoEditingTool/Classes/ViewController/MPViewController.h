@@ -9,9 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface MPViewController : UIViewController
+{
 
+    NSString *message;
+}
 @property (strong, nonatomic) IBOutlet UITextField *txtUsername;
 
 @property (strong, nonatomic) IBOutlet UITextField *txtPassword;
+
+
 - (IBAction)btnSubmit:(UIButton *)sender;
 @end

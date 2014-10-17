@@ -40,24 +40,31 @@
     
 }
 - (IBAction)btnSubmit:(UIButton *)sender {
-    
-   
-    NSLog(@"%@",txtUsername.text);
-    
-    
-    
-    NSString *aStrQuery = [NSString stringWithFormat: @"SELECT * FROM Users WHERE username='%@' AND password ='%@'",txtUsername.text,txtPassword.text];
+      NSString *aStrQuery = [NSString stringWithFormat: @"SELECT * FROM Users WHERE username='%@' AND password ='%@'",txtUsername.text,txtPassword.text];
     
    NSMutableArray *userArray= [[database shareDatabase]getAllDataForQuery:aStrQuery];
     
     if([userArray count]){
-    
-        NSLog(@"yes%d",[userArray count]);
-    }else{
         
-     NSLog(@"NO	%d",[userArray count]);
-    
+        NSLog(@"%@d",userArray);
+        
+        // Save User details to session for future use
+        id userid=[[userArray objectAtIndex:0] objectForKey:@"id"];
+        [[NSUserDefaults standardUserDefaults] setObject:txtUsername.text forKey:@"USERNAME"];
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"AUTOLOGIN"];
+        [[NSUserDefaults standardUserDefaults] setObject:userid forKey:@"USERID"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+         //     [self.navigationController pushViewController:objProfile animated:YES];
+
+        [self performSegueWithIdentifier:@"LoginToTabBar" sender:self];
+    }else{
+        NSLog(@"NO	%d",[userArray count]);
+      message =@"Invalid User";
+
+        UIAlertView *alertSingle =[[UIAlertView alloc]initWithTitle:@"Photo Editing Tool" message:message delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        alertSingle.tag=1;
+        [alertSingle show];
+
     }
-    
-}
+  }
 @end

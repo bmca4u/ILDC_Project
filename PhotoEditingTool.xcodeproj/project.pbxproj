@@ -26,6 +26,8 @@
 		A950483A19EE17DD0089F535 /* database.m in Sources */ = {isa = PBXBuildFile; fileRef = A950483919EE17DD0089F535 /* database.m */; };
 		A9EEE27119ECC24A0036F1D5 /* myPhotoEditingToolSqllite in Resources */ = {isa = PBXBuildFile; fileRef = A9EEE27019ECC24A0036F1D5 /* myPhotoEditingToolSqllite */; };
 		A9EEE27719ECC5D50036F1D5 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A9EEE27619ECC5D50036F1D5 /* libsqlite3.0.dylib */; };
+		A9F01E9319F0B5C600E79F37 /* AlbumListingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F01E9219F0B5C600E79F37 /* AlbumListingVC.m */; };
+		A9F571AA19EF66090051E1B6 /* RegVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F571A919EF66090051E1B6 /* RegVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,10 @@
 		A950483919EE17DD0089F535 /* database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = database.m; sourceTree = "<group>"; };
 		A9EEE27019ECC24A0036F1D5 /* myPhotoEditingToolSqllite */ = {isa = PBXFileReference; lastKnownFileType = file; name = myPhotoEditingToolSqllite; path = PhotoEditingTool/myPhotoEditingToolSqllite; sourceTree = "<group>"; };
 		A9EEE27619ECC5D50036F1D5 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		A9F01E9119F0B5C600E79F37 /* AlbumListingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumListingVC.h; sourceTree = "<group>"; };
+		A9F01E9219F0B5C600E79F37 /* AlbumListingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumListingVC.m; sourceTree = "<group>"; };
+		A9F571A819EF66090051E1B6 /* RegVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegVC.h; sourceTree = "<group>"; };
+		A9F571A919EF66090051E1B6 /* RegVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +193,7 @@
 		A94EAF0919EB812B00952156 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A9F01E9019F0B59C00E79F37 /* Albumlisting */,
 				A94EAF0A19EB812B00952156 /* LoginRegVc */,
 				A94EAF0B19EB812B00952156 /* MPViewController.h */,
 				A94EAF0C19EB812B00952156 /* MPViewController.m */,
@@ -198,6 +205,8 @@
 		A94EAF0A19EB812B00952156 /* LoginRegVc */ = {
 			isa = PBXGroup;
 			children = (
+				A9F571A819EF66090051E1B6 /* RegVC.h */,
+				A9F571A919EF66090051E1B6 /* RegVC.m */,
 			);
 			path = LoginRegVc;
 			sourceTree = "<group>";
@@ -242,6 +251,15 @@
 				A950483919EE17DD0089F535 /* database.m */,
 			);
 			path = Database;
+			sourceTree = "<group>";
+		};
+		A9F01E9019F0B59C00E79F37 /* Albumlisting */ = {
+			isa = PBXGroup;
+			children = (
+				A9F01E9119F0B5C600E79F37 /* AlbumListingVC.h */,
+				A9F01E9219F0B5C600E79F37 /* AlbumListingVC.m */,
+			);
+			path = Albumlisting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,8 +365,10 @@
 				A94EAEDA19EB71A300952156 /* main.m in Sources */,
 				A9394E9319EB81FB00072037 /* SplashVC.m in Sources */,
 				A94EAF1419EB812B00952156 /* MPViewController.m in Sources */,
+				A9F571AA19EF66090051E1B6 /* RegVC.m in Sources */,
 				A950483A19EE17DD0089F535 /* database.m in Sources */,
 				A94EAF1319EB812B00952156 /* MPAppDelegate.m in Sources */,
+				A9F01E9319F0B5C600E79F37 /* AlbumListingVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

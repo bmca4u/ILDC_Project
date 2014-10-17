@@ -1,18 +1,18 @@
 //
-//  SplashVC.m
+//  RegVC.m
 //  PhotoEditingTool
 //
-//  Created by indianic on 12/10/14.
+//  Created by indianic on 16/10/14.
 //  Copyright (c) 2014 ILDC. All rights reserved.
 //
 
-#import "SplashVC.h"
+#import "RegVC.h"
 
-@interface SplashVC ()
+@interface RegVC ()
 
 @end
 
-@implementation SplashVC
+@implementation RegVC
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -25,19 +25,10 @@
 
 - (void)viewDidLoad
 {
-    
-    self.navigationController.navigationBarHidden = YES;
-    [self performSelector:@selector(goToLoginScreen) withObject:nil afterDelay:1.0];
-
- 
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
 
--(void)goToLoginScreen
-{
-   [self performSegueWithIdentifier:@"goToLogin" sender:self];
-}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
